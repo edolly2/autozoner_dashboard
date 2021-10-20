@@ -1,0 +1,88 @@
+.login-container {
+  position: relative;
+  background-color: green;
+}
+
+.login-form {
+  min-width: 35vw;
+  max-width: 35vw;
+  min-height: 35vh;
+  max-height: 35vh;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  border-radius: 0.6rem;
+}
+
+.label-group {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.login-form label {
+}
+
+.login-form input::placeholder {
+  color: rgba(139, 139, 139, 0.5);
+  font-size: 1.4rem;
+}
+
+.login-form input {
+  width: 100%;
+  border-radius: 0.6rem;
+  padding: 0.6rem;
+}
+
+.login-form input:focus {
+  outline: none;
+}
+
+#login-username {
+  margin-bottom: 0.8rem;
+}
+
+#login-password {
+  margin-bottom: 0.8rem;
+}
+
+#login-username {
+}
+
+#login-password {
+}
+
+.login-form-submit-btn {
+  width: 25%;
+}
+
+.login-form-link-container {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (max-width: 420px) {
+  .login-form {
+    min-width: 85vw;
+    max-width: 85vw;
+    min-height: 30vh;
+    max-height: 30vh;
+  }
+  .label-group {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+}
