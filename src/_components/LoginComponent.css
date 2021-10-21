@@ -17,10 +17,10 @@
   /* top: 50%; */
   /* left: 50%; */
   /* transform: translate(-50%, -50%); */
-  background-color: red;
+  background-color: var(--dark-clr);
+  border: 2px solid var(--primary-clr);
   border-radius: 0.6rem;
-  border: 2px solid black;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 50px rgb(0, 0, 0), 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .label-group {
@@ -32,11 +32,13 @@
 }
 
 .login-form label {
+  color: var(--primary-clr);
 }
 
 .login-form input {
   width: 100%;
   padding: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .login-form input::placeholder {
@@ -46,6 +48,7 @@
 
 .login-form input:focus {
   outline: none;
+  box-shadow: 0 0 5px 2px var(--primary-clr);
 }
 
 #login-username {
@@ -68,8 +71,8 @@
 
 .login-form-link-container {
   display: flex;
-  /* justify-content: space-between; */
-  gap: 3.2rem;
+  justify-content: center;
+  gap: 6.4rem;
   margin-bottom: 1.6rem;
   width: 100%;
 }

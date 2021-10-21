@@ -15,6 +15,7 @@ const LoginComponent = () => {
           name="login-username"
           id="login-username"
           placeholder="Employee ID"
+          spellCheck="false"
         />
       </div>
       <div className="label-group">
